@@ -1,0 +1,142 @@
+
+**** 05/12/22 00:03:27 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Sim"  [ C:\Users\Lenovo\Documents\orCAD\Test-PSpiceFiles\SCHEMATIC1\Sim.sim ] 
+
+
+ ****     CIRCUIT DESCRIPTION
+
+
+******************************************************************************
+
+
+
+
+** Creating circuit file "Sim.cir" 
+** WARNING: THIS AUTOMATICALLY GENERATED FILE MAY BE OVERWRITTEN BY SUBSEQUENT SIMULATIONS
+
+*Libraries: 
+* Profile Libraries :
+* Local Libraries :
+* From [PSPICE NETLIST] section of C:\SPB_Data\cdssetup\OrCAD_PSpice\17.4.0\PSpice.ini file:
+.lib "nom.lib" 
+
+*Analysis directives: 
+.TRAN  0 1000ns 0 
+.OPTIONS ADVCONV
+.PROBE64 V(alias(*)) I(alias(*)) W(alias(*)) D(alias(*)) NOISE(alias(*)) 
+.INC "..\SCHEMATIC1.net" 
+
+
+
+**** INCLUDING SCHEMATIC1.net ****
+* source TEST
+V_V1         N00098 0 10
+X_U1A         N00098 0 N00098 0 N00204 UA772A
+R_R1         N00204 0  1k TC=0,0 
+
+**** RESUMING Sim.cir ****
+.END
+
+**** 05/12/22 00:03:27 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Sim"  [ C:\Users\Lenovo\Documents\orCAD\Test-PSpiceFiles\SCHEMATIC1\Sim.sim ] 
+
+
+ ****     Diode MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.dx        X_U1A.dy        
+          IS  800.000000E-18  800.000000E-18 
+          RS                    1.000000E-03 
+         CJO                   10.000000E-12 
+
+
+**** 05/12/22 00:03:27 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Sim"  [ C:\Users\Lenovo\Documents\orCAD\Test-PSpiceFiles\SCHEMATIC1\Sim.sim ] 
+
+
+ ****     Junction FET MODEL PARAMETERS
+
+
+******************************************************************************
+
+
+
+
+               X_U1A.jx        
+               PJF             
+         VTO   -1            
+        BETA  205.000000E-06 
+          IS   25.000000E-12 
+
+
+**** 05/12/22 00:03:27 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Sim"  [ C:\Users\Lenovo\Documents\orCAD\Test-PSpiceFiles\SCHEMATIC1\Sim.sim ] 
+
+
+ ****     INITIAL TRANSIENT SOLUTION       TEMPERATURE =   27.000 DEG C
+
+
+******************************************************************************
+
+
+
+ NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE     NODE   VOLTAGE
+
+
+(N00098)   10.0000 (N00204)    9.7919 (X_U1A.6)   -4.2051                       
+
+(X_U1A.7)   11.3300                   (X_U1A.8)   11.3300                       
+
+(X_U1A.9)    0.0000                   (X_U1A.10)     .3779                      
+
+(X_U1A.11)     .2969                  (X_U1A.12) 247.6E-09                      
+
+(X_U1A.53)    9.0000                  (X_U1A.54)    1.0000                      
+
+(X_U1A.90)   25.6380                  (X_U1A.91)   25.0000                      
+
+(X_U1A.92)  -25.0000                  (X_U1A.99)    5.0000                  
+
+
+
+
+    VOLTAGE SOURCE CURRENTS
+    NAME         CURRENT
+
+    V_V1        -1.000E+03
+    X_U1A.vb    -4.205E-05
+    X_U1A.vc    -1.585E-02
+    X_U1A.ve     8.656E-12
+    X_U1A.vlim   2.564E-02
+    X_U1A.vlp    4.170E-05
+    X_U1A.vln   -5.064E-11
+
+    TOTAL POWER DISSIPATION   1.00E+04  WATTS
+
+
+
+          JOB CONCLUDED
+
+**** 05/12/22 00:03:27 ******* PSpice 17.4.0 (Nov 2018) ******* ID# 0 ********
+
+ ** Profile: "SCHEMATIC1-Sim"  [ C:\Users\Lenovo\Documents\orCAD\Test-PSpiceFiles\SCHEMATIC1\Sim.sim ] 
+
+
+ ****     JOB STATISTICS SUMMARY
+
+
+******************************************************************************
+
+
+
+  Total job time (using Solver 1)   =         .03
+

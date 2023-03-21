@@ -1,0 +1,4 @@
+* source TEST
+V_V1         N00098 0 10
+X_U1A         N00098 0 N00098 0 N00204 UA772A
+R_R1         N00204 0  1k TC=0,0 
